@@ -15,12 +15,21 @@ inversion/data/
 *.grib*
 *.hdf*
 
-# ── WPS / ungrib intermediates (e.g. preprocessing/domain/) ──
+# ── WPS / ungrib intermediates & tables (e.g. preprocessing/domain/) ──
 PFILE:*
 FILE:*
 GRIBFILE.*
 geo_em*
 met_em*
+METGRID.TBL
+Vtable
+link_grib.csh
+
+# ── Compiled binaries & objects ──
+*.exe
+*.o
+*.so
+*.mod
 
 # ── Model source & build (external, re-obtainable) ──
 WRF/
