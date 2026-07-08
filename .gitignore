@@ -60,6 +60,7 @@ VMSDIST
 WARNING
 wget-log
 *.log
+*.log.*
 rsl.out.*
 rsl.error.*
 
