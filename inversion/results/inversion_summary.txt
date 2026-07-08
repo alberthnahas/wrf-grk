@@ -1,0 +1,19 @@
+WRF-STILT Bayesian Inversion: Fire CO2 Emissions
+Indonesia IDN_BB_2015 — Oct 24-29 2015
+======================================================================
+
+OBSERVATION SOURCES:
+  Primary: NOAA flask BKT Oct27 = 409.51 ppm (flag=C, fire-contaminated)
+  Secondary: CT2025 reanalysis surface CO2 (pseudo-obs, 30 receptor-times)
+  Background: 399.1 ppm (GMI, SEY, SMO, MLO clean remote stations)
+
+POSTERIOR SCALING FACTORS:
+  Sumatra             : α = 0.091 ± 0.036
+  Kalimantan          : α = -0.010 ± 0.007
+  Java/Sulawesi       : α = 1.478 ± 0.313
+
+chi2 (prior): 408.812
+chi2 (post):  2.727
+
+NOTE: OCO-2 data (Oct 23-26 2015) requires Earthdata password reset.
+      See inversion/get_oco2.sh for download instructions.

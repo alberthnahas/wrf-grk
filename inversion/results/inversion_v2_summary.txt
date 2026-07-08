@@ -1,0 +1,35 @@
+WRF-STILT Bayesian Inversion v2 — Fire CO2 Emissions
+Indonesia IDN_BB_2015 — Oct 24-29 2015
+======================================================================
+
+IMPROVEMENTS OVER v1:
+  I1: Non-negativity constraint (scipy SLSQP, alpha >= 0)
+  I2: Literature-informed priors (Huijnen 2016, Parker 2016, Nechita-Banda 2018)
+  I3: OCO-2 column averaging kernels (per-sounding AK, not fixed 0.25)
+  I4: CT2025 independence fix (sigma x2 near BKT Oct 26-28)
+  I5: 6-region state vector + Tikhonov smoothness (lambda=5)
+
+POSTERIOR SCALING FACTORS (v2):
+  Region                   alpha_prior    alpha_post    sigma_post
+  ------------------------------------------------------------
+  Sumatra N+C                    0.400         0.431         0.219
+  Sumatra S                      0.250         0.458         0.051
+  Kalimantan W+C                 0.150         0.091         0.014
+  Kalimantan S+E                 0.200         0.111         0.131
+  Java                           0.800         1.074         0.279
+  Sulawesi+East                  0.500         0.925         0.220
+
+chi2 (prior):     3.316
+chi2 (posterior): 2.958
+
+EMISSION TOTALS (Tg CO2, Oct 24-29):
+  Region                       Prior     Posterior
+  ------------------------------------------------
+  Sumatra N+C                  0.216         0.093
+  Sumatra S                   25.946        11.882
+  Kalimantan W+C              34.009         3.087
+  Kalimantan S+E              23.875         2.660
+  Java                         3.113         3.342
+  Sulawesi+East                7.109         6.573
+
+  TOTAL                       94.269        27.636

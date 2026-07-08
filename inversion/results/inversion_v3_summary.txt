@@ -1,0 +1,11 @@
+# Inversion v3 — 11-site STILT network + I7 CO constraint
+# Dates: Oct 6-31 2015 (26 days)
+# Total obs: 347
+# chi2_prior=1.948  chi2_post=1.583
+Sumatra N+C: alpha=0.2803 sigma=0.1997 prior_tg=3.089 post_tg=0.866
+Sumatra S: alpha=0.4617 sigma=0.0404 prior_tg=126.416 post_tg=58.363
+Kalimantan W+C: alpha=0.2446 sigma=0.1407 prior_tg=7.982 post_tg=1.952
+Kalimantan S+E: alpha=0.6335 sigma=0.0465 prior_tg=215.506 post_tg=136.533
+Java: alpha=0.1853 sigma=0.1998 prior_tg=5.912 post_tg=1.095
+Sulawesi+East: alpha=0.1396 sigma=0.0555 prior_tg=112.668 post_tg=15.726
+TOTAL: prior_tg=471.573 post_tg=214.535

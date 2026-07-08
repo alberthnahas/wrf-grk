@@ -1,0 +1,42 @@
+&share
+ WRF_CORE                = 'ARW',
+ MAX_DOM                 = 1,
+ START_DATE              = '2015-07-25_00:00:00',
+ END_DATE                = '2015-11-30_18:00:00',
+ INTERVAL_SECONDS        = 21600,
+ IO_FORM_GEOGRID         = 2,
+ OPT_OUTPUT_FROM_GEOGRID_PATH = '/home/igrk/WRF-GRK/simulations/IDN_BB_2015/met_em',
+/
+
+&geogrid
+ OPT_GEOGRID_TBL_PATH    = '/home/igrk/WRF-GRK/WPS/geogrid/',
+ GEOG_DATA_PATH          = '/home/igrk/WRF-GRK/rawdata/geog/WPS_GEOG',
+ GEOG_DATA_RES           = 'modis_30s_lake+modis_lai+modis_fpar+default',
+
+ MAP_PROJ                = 'mercator',
+ REF_LAT                 =  0.0,
+ REF_LON                 = 117.5,
+ TRUELAT1                =  0.0,
+ STAND_LON               = 117.5,
+ DX                      = 27000,
+ DY                      = 27000,
+ E_WE                    = 232,
+ E_SN                    = 128,
+
+ PARENT_ID               = 1,
+ PARENT_GRID_RATIO       = 1,
+ I_PARENT_START          = 1,
+ J_PARENT_START          = 1,
+/
+
+&ungrib
+ OUT_FORMAT              = 'WPS',
+ PREFIX                  = 'FILE',
+/
+
+&metgrid
+ FG_NAME                 = 'FILE',
+ IO_FORM_METGRID         = 2,
+ OPT_METGRID_TBL_PATH    = '/home/igrk/WRF-GRK/WPS/metgrid/',
+ OPT_OUTPUT_FROM_METGRID_PATH = '/home/igrk/WRF-GRK/simulations/IDN_BB_2015/met_em',
+/

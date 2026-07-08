@@ -1,0 +1,63 @@
+# ═══════════════════════════════════════════════════════════════════
+#  WRF-GRK .gitignore — commit code/docs/config only; never data/secrets
+# ═══════════════════════════════════════════════════════════════════
+
+# ── Large data (kept off-box / re-downloadable; NOT for GitHub) ──
+rawdata/
+simulations/
+stilt/met/
+stilt/out/
+stilt/out_06utc/
+inversion/data/
+*.arl
+*.nc
+*.nc4
+*.grib*
+*.hdf*
+
+# ── WPS / ungrib intermediates (e.g. preprocessing/domain/) ──
+PFILE:*
+FILE:*
+GRIBFILE.*
+geo_em*
+met_em*
+
+# ── Model source & build (external, re-obtainable) ──
+WRF/
+WPS/
+libs/
+*.tar.gz
+
+# ── Compiled STILT/HYSPLIT binaries (keep only the small .CFG configs) ──
+stilt/bin/
+stilt/exe/*
+!stilt/exe/*.CFG
+
+# ── Python env & caches ──
+.venv/
+__pycache__/
+*.pyc
+
+# ── Editor / OS cruft ──
+*.swp
+*~
+._*
+.DS_Store
+
+# ── HYSPLIT working-dir markers & misc logs ──
+MESSAGE
+STARTUP
+VMSDIST
+WARNING
+wget-log
+*.log
+rsl.out.*
+rsl.error.*
+
+# ── SECRETS & local settings — must never be committed ──
+**/nasa_credentials.txt
+.netrc
+.urs_cookies
+*.pem
+.env
+.claude/settings.local.json
